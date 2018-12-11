@@ -1,4 +1,4 @@
-/*то, что нужно везде*/
+/*Общее или почти общее*/
 @font-face {
 	font-family: "Open Sans reg";
 	src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
@@ -30,6 +30,28 @@ a:active {
   text-decoration: none;
 }
 
+.body {
+	margin: 0px;
+}
+
+.header {
+	margin: 0px auto;	
+}
+
+.main-page {
+	display: flex;
+	justify-content: center;
+	margin: 120px 0px 0px 0px;
+}
+
+.right-display {
+	width: 278px;
+	margin-left: 120px;
+}
+
+.right-item {
+	margin-bottom: 59px;
+}
 
 /*верхняя шапка*/
 .header {
@@ -38,14 +60,13 @@ a:active {
 	background-color: #567619;
 	background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
 	background-repeat: no-repeat;
+	background-size: 100%;
 	position: relative;
-	background-size: cover;
 }
 
 .header::after {
 	content: "";
 	height: 449px;
-	width: 1660px;
 	position: absolute;
 	top:0;
 	right: 0;
@@ -72,7 +93,6 @@ a:active {
 
 .nav-list {
 	display: flex;
-	margin-block-start: 0px;
 	text-align: left;
 	list-style-type: none;
 	padding: 0;
@@ -125,25 +145,29 @@ a:active {
 
 .news  {
 	display: flex;
-	margin-top: 61px;
 }
 
-.teg-list {
+.news:nth-of-type(1n+1) {
+	margin-top: 59px;
+}
+
+.news-tags-list {
 	display: flex;
 	list-style-type: none;
 	padding: 0px;
 	margin: 0px;
 }
 
-.teg {
+.news-tag {
+	list-style-type: none;
 	font-family: "Open Sans bold";
 	font-size: 14px;
 	color: #b59f5b;
 	text-transform: uppercase;
 }
 
-.teg:nth-of-type(1n+2) {
-	margin-left: 19px;
+.news-tag:nth-of-type(1n+1) {
+	margin-left: 19px;	
 }
 
 .time-and-author {
@@ -152,6 +176,7 @@ a:active {
 }
 
 .news-head {
+	line-height: 23px;
 	font-family: "Open Sans bold";
 	font-size: 20px;
 	color: #0f0d0e;
@@ -174,7 +199,202 @@ a:active {
 }
 
 .news-text {
+	line-height: 12px;
 	font-family: "Open Sans reg";
 	font-size: 12px;
 	color: #0f0d0e;
+	font-weight: normal;
+}
+
+
+/*новости в правой части. В классах записаны, как small-news.*/
+.small-news-page {
+	display: flex;
+	flex-direction: column;
+}
+
+.small-news {
+	display: flex;
+
+}
+
+.small-news-time {
+	font-family: "Open Sans reg";
+	font-size: 12px;
+	color: #000000;
+	opacity: 0.54;
+	font-weight: normal;
+
+}
+
+.small-news-header, .small-news-headline, .subscribe-header, .header-tags, .header-categories{
+	font-family: "Open Sans bold";
+	font-size: 14px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.small-news-headline, .subscribe-header, .header-tags, .header-categories{
+	text-align: center;
+	margin: 0px;
+}
+
+.rect {
+	height: 3px;
+	width: 66px;
+	background-color: #e1d9bd;
+	margin: 14px auto 28px auto;
+
+}
+
+.small-news-information {
+	margin-left: 20px;
+}
+
+.small-news:nth-of-type(1n+1) {
+	margin-top: 22px;
+}
+
+
+/*строка ввода и кнопка поиска*/
+.search-group {
+	display: flex;
+}
+
+.field, .subscribe-field {
+  box-sizing: border-box;
+  width: 223px;
+  height: 48px;
+  border: none;
+  padding: 18px 0px 19px 19px;
+  margin: 0px;
+  
+  font-family: "Open Sans reg";
+  font-size: 13px;
+  
+  background-color: #f4f7f6;
+}
+
+.button {
+	width: 48px;
+	height: 48px;
+	border: none;
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #b59f5b; 
+}
+
+.search-img {
+	width: 19px;
+	height: 18px;
+}
+
+
+/*подписка*/
+
+.subscribe-field {
+	width: 272px;
+}
+
+.subscribe-button {
+	width: 270px;
+	height: 49px;
+	background-color: #b59f5b; 
+	text-transform: uppercase;
+	color: #ffffff;
+	font-family: "Open Sans bold";
+	border: none;
+}
+
+
+/*теги*/
+
+.tag-list {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0px;
+	margin: 0px;
+}
+
+.tags {
+	margin-bottom: 53px;
+}
+
+.tag {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-family: "Open Sans bold";
+	font-size: 12px;
+	color: #0f0d0e;
+	padding: 8px 14px;
+	border: 3px solid #eeeeee;
+	margin: 0px 5px 6px 0px;
+}
+
+
+/*категории*/
+.categories-list {
+	list-style-type: none;
+}
+
+.categories-item {
+	font-family: "Open Sans bold";
+	font-size: 14px;
+	color: #000000;
+}
+
+.sup {
+	font-family: "Open Sans bold";
+	font-size: 12px;
+	color: #b59f5b;
+}
+
+.categories-item:nth-of-type(1n+2) {
+	padding: 18px 0px 18px 0px;
+	border-bottom: 2px solid #eeeeee;
+	border-collapse: separate;
+}
+
+.categories-item:first-child {
+	padding-bottom: 18px;
+	border-bottom: 2px solid #eeeeee;
+}
+
+
+/*нижняя часть страницы*/
+
+.social-networks {
+	display: flex;
+	width: 1110px;
+	height: 82px;
+	background-color: #f4f7f6;
+	margin: 70px auto;
+}
+
+.social-networks-list {
+	margin: auto;
+	display: flex;
+}
+
+.social-icon {
+	height: 21px;
+	width: auto;
+}
+
+.social-icon:nth-of-type(1n+2) {
+	margin-left: 20px;
+}
+
+/*конечный элемент*/
+
+.end {
+	font-family: "Open Sans bold";
+	font-size: 12px;
+	color: #999999;
+	margin: auto;
+}
+
+.end-element {
+	display: flex;
 }
