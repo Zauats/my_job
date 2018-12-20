@@ -233,6 +233,10 @@ body {
 	text-transform: uppercase;
 }
 
+.small-news-header {
+	margin-top: 7px;
+}
+
 .headline {
     position: relative;
 	text-align: center;
@@ -285,6 +289,7 @@ body {
 
 .subscribe-field {
 	width: 100%;
+	margin-bottom: 16px;
 }
 
 .button {
@@ -304,10 +309,6 @@ body {
 	background-size: 18px;
 }
 /*подписка*/
-
-.subscribe-field {
-	width: 272px;
-}
 
 .subscribe-button {
 	width: 270px;
@@ -382,9 +383,11 @@ body {
 	width: 1170px;
 	background-color: #f4f7f6;
 	margin: 70px auto;
+	padding: 30px 0px;
 }
 
 .social-networks-list {
+	padding: 0px;
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
@@ -392,17 +395,18 @@ body {
 
 }
 
-.social-icon-1, .social-icon-2, .social-icon-3, .social-icon-4, .social-icon-5 {
-	height: 20px;
-	width: 20px;
+.social-icon {
+	margin-right: 20px
+}
+
+.social-icon-1, .social-icon-2, .social-icon-3, .social-icon-4, .social-icon-5{
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
-	margin-right: 20px;
-	padding: 30px 0px;
+	background-color: #ffffff;
 }
 
-.social-icon-1 {
+.social-icon {
 	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
 }
 
