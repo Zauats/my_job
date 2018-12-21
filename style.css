@@ -400,14 +400,17 @@ body {
 }
 
 .social-icon-1, .social-icon-2, .social-icon-3, .social-icon-4, .social-icon-5{
+	height: 20px;
+	width: 20px;
+	display: block;
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-color: #ffffff;
 }
 
-.social-icon {
-	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg);
+.social-icon-1 {
+	background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg);
 }
 
 .social-icon-2 {
