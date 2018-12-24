@@ -1,17 +1,17 @@
 /*Общее или почти общее*/
-@font-face {
-	font-family: "Open Sans";
-	src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
-	font-weight: 400;
-	font-style: normal;
-}
+@font-face { 
+	font-family: "Open Sans"; 
+	src: url(https://netology-code.github.io/html-2-diploma/source..); 
+	font-weight: 400; 
+	font-style: normal; 
+} 
 
-@font-face {
-	font-family: "Open Sans bold";
-	src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
-	font-weight: 700;
-	font-style: normal;
-}
+@font-face { 
+	font-family: "Open Sans"; 
+	src: url(https://netology-code.github.io/html-2-diploma/source..); 
+	font-weight: 700; 
+	font-style: normal; 
+} 
 
 .link-reset:link {
   color: inherit; 
@@ -406,7 +406,6 @@ body {
 	background-size: 20px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-color: #ffffff;
 }
 
 .social-icon-1 {
