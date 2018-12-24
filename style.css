@@ -96,11 +96,10 @@ body {
 	width: 1170px;
 	margin: 0px auto 0px auto;
 	padding-top: 45px;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.nav {
-	margin-left: 460px;
-}
 
 .nav-list {
 	display: flex;
